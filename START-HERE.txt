@@ -1,0 +1,447 @@
+==========================================================
+  NEON CITY DRIVE  -  KAISE KHOLEIN (How to open)
+==========================================================
+
+1) Godot 4 install karein:      https://godotengine.org/download
+   -> "Godot Engine" (standard version) download karein, .NET wala nahi.
+
+2) Is ZIP ko extract karein. Aapko ek folder milega:
+        neon-city-drive\
+
+3) Godot kholein. Start window me "Import" par click karein.
+   "Browse" karke us folder ke ANDAR ki file chunein:
+        neon-city-drive\project.godot
+   Phir "Import & Edit" dabayein.
+
+   (Agar pehle se project khula hai: Project > Import > project.godot)
+
+4) Editor khulne ke baad keyboard par F5 dabayein (ya top-right
+   ka Play button) -> game start ho jayega.
+
+----------------------------------------------------------
+  CONTROLS
+----------------------------------------------------------
+  W / Arrow Up      : accelerator
+  S / Arrow Down    : brake, phir reverse
+  A / D             : steering
+  Shift             : boost (nitro)
+  Space             : handbrake (drift ke liye)
+  V  (ya C)         : CAMERA BADLEIN - 3 angle hain:
+                        1) CLOSE     = car ke bilkul paas, tight chase cam
+                        2) SPEED     = jitna fast jaoge utna peeche + wide lens
+                        3) CINEMATIC = slow drone jo car ke chaaro taraf
+                                       ghoomta hai (screenshot ke liye best)
+  M                 : BADA MAP kholo / band karo
+  F                 : CAR ME BAITHO / CAR SE UTRO
+  MOUSE WHEEL / +/- : bade map ko zoom in / zoom out karo
+  R                 : wapas road par respawn
+  L                 : shadows on/off (performance badhane ke liye)
+  Esc               : game band karein
+
+----------------------------------------------------------
+  PAIDAL (ON FOOT) - GAME YAHIN SE SHURU HOTI HAI
+----------------------------------------------------------
+  Aap gaadi ke paas khade ho. F dabao to gaadi me baith
+  jaoge, wapas F dabao to utar jaoge.
+
+  W A S D           : chalna
+  SHIFT             : sprint (tez daud)
+  CTRL              : crouch (baith ke chalna)
+  Z                 : PRONE - zameen par let ke crawl karna
+  SPACE             : JUMP
+  LEFT CLICK        : GUN SE FIRE (hold = drag fire, lagataar chalti
+                        rahegi). Haath me grenade/gloo/medkit ho to
+                        ek click me wahi use hota hai.
+  RIGHT CLICK       : AIM - har gun par GOL CHAKKAR WALI SIGHT khulti
+                        hai (rifle/SMG/pistol par laal dot ring,
+                        KAR98K/AWM par poora zoom wala sniper scope)
+  TAB (dabaye rakho): WEAPON WHEEL - GTA 5 jaisa gol chakkar. Mouse
+                        ghumao, jis hisse par mouse ho wahi select, TAB
+                        chhodo to wo hath me aa jayega. Wheel me 10
+                        gun + GRENADE + GLOO WALL + MEDKIT sab hai.
+  E                 : saamne pada LOOT uthao (gun, vest, helmet,
+                        grenade, gloo wall, medkit)
+  K                 : medkit use karo (health full)
+  G                 : gloo wall rakho (ek saath sirf 3 tikte hain)
+  H                 : grenade phenko
+  X                 : PUNCH - 3 hit ka combo
+  MOUSE             : camera ghumao (dekhne ke liye)
+  R                 : reload (gaadi me: road par respawn)
+  V                 : walk camera paas / door
+
+  NOTE: FIRE KARTE WAQT AIM KHUD UPAR NAHI JATA. Recoil sirf haath
+  ko hilaata hai aur crosshair failata hai - bandook wahi rehti hai
+  jahan aapka mouse hai.
+
+  GLOO WALL AUTO REFILL: gloo wall rakhne ke 10 second baad aapka
+  stock apne aap wapas 5 ho jaata hai (HUD me ulta countdown dikhta
+  hai, jaise "7s"). Isliye cover hatne ke baad intezaar karo.
+
+  HAATH ME KYA HAI WAHI DIKHEGA:
+   - gun select -> dono haath gun par (daayan haath grip par,
+     baayan haath hand guard par), gun chalne layak upar utthi hui
+   - grenade select -> haath me grenade
+   - gloo wall select -> haath me neela canister
+   - medkit select -> haath me laal cross wala kit
+
+  FIRE KARNE PAR PLAYER GHUMPTA HAI: aap kisi taraf khade ho,
+  mouse ghumake doosri taraf aim kiya aur fire kiya -> fire karte
+  hi pura character usi taraf ghoom jaata hai (peeth se goli nahi
+  chalegi).
+
+  JUMP me haath AAGE upar jaate hain (peeshe nahi), ghutne
+  mukde hue - aur gun haath me ho to jump me bhi dono haath gun
+  par hi rehte hain.
+
+  Animation sab REAL-TIME bante hain (koi video clip nahi):
+   - khade rehne par saans lena, idhar-udhar dekhna
+   - chalne par haath-pair ka pura jhoola, kamar ka hilna
+   - sprint me aage jhukna, tez kadam
+   - crouch, prone crawl, jump (hawas me pair sametna)
+   - punch par kamar ghoomna + guard hand upar
+
+----------------------------------------------------------
+  GHAR KE ANDAR JA SAKTE HO  +  ANDAR LOOT PADA HAI
+----------------------------------------------------------
+  AB POORE MAP KE HAR GHAR AUR HAR SHOP KE ANDAR JA SAKTE HO -
+  aur har ek building ke andar RANDOM ITEMS pade milenge
+  (100% ghar me - koi ghar khaali nahi):
+    gun + uski ammo, body vest, helmet, grenade,
+    gloo wall, medkit
+  Item zameen par ghoomta hua chamakta hai; paas jaao to
+  screen par [E] SCAR AMMO jaisa likha aata hai - E dabao,
+  item aapka. Medkit K se use hota hai, gloo/grenade ka
+  stock bhi loot se badhta hai.
+
+  Ghar ke andar:
+   - darwaza khula hai (leaf andar ki taraf khula hua)
+   - charo taraf khidki, frame + glass + sill ke saath
+   - ground floor par sofa, table, kursi, TV, bookshelf,
+     kitchen counter, fridge, dining table, ceiling light
+   - ANDAR SE SEEDI upar - 2nd floor me bed, wardrobe,
+     desk, nightstand
+   - doosri seedi se CHHAT par - chhat par water tank,
+     AC unit, bench aur pura town dikhta hai
+   - ghar ke andar apne aap warm light jal jati hai
+   - ground floor aur upar ke floor par loot pade milenge
+
+----------------------------------------------------------
+  RED DRUM (BARREL) - BLAST HOTA HAI
+----------------------------------------------------------
+  Town aur factory area me laal drum (peeli patti wale)
+  khade milenge:
+   - PUNCH maro ya CAR se takkar do -> BLAST
+   - aag ka gola, dhool ka ring, dhuwan, udta malba
+   - 7 meter ke andar ke drum bhi 1-2 second me phoot
+     jate hain (chain reaction)
+   - blast se player ko dhakka lagta hai, camera hilti hai
+
+----------------------------------------------------------
+  SCREEN PAR KYA DIKHEGA
+----------------------------------------------------------
+  1) NEECHE DAAYEIN (bottom right) : ROUND SPEEDOMETER -
+     needle wala, jo speed dikhata hai (sirf gaadi me).
+     Paidal chalte waqt ye chhup jata hai.
+  2) UPAR DAAYEIN (top right) : chhota SQUARE 3D MAP -
+     asli city ka upar se dikhne wala view, sirf ~260 meter
+     ka area - matlab apni lane, agla chauraha, ghar, ped,
+     traffic light sab saaf dikhte hain (door ka overview nahi).
+     Beech me neela ARROW = aapki car.
+     MAP AAPKE SAATH GHUMPTA HAI - jis taraf car chal rahi
+     hai wo hamesha UPAR rehta hai, aur N (north) ka nishan
+     bhi ghoomta hai.
+
+  BADA MAP (M dabao):
+   - asli 3D duniya ka upar se bada view (flat naksha nahi)
+   - saari 18 city ke naam dikhte hain, har city ke charo
+     taraf ek rangeen gol nishan (jis city me aap ho uska
+     naam white me chamakta hai)
+   - YE BHI CHALTE WAQT GHUMPTA HAI - car jis taraf mudi,
+     map usi taraf ghoom jata hai (thoda smooth lagega)
+   - ZOOM: MOUSE WHEEL ghumao ya = / - dabao
+       300 m  -> ek gali bhar
+       8.6 km -> poora island
+     kitna zoom hai wo upar likha hua aata hai (ZOOM 1.5 km)
+   - MAP PAR KISI BHI JAGAH CLICK karo -> wahi aapki
+     DESTINATION set ho jayegi
+   - aapke arrow se us jagah tak PEELI DOTTED LINE dikhegi
+     (distance bhi likha aayega)
+   - agar destination screen ke bahar ho to line map ke
+     kinare par ek DIAMOND nishan tak aati hai, taaki pata
+     rahe kis taraf jaana hai
+   - wahan pahunchte hi (30 meter ke andar) line gayab ho
+     jayegi
+   - M ya Esc dabao to map band
+
+----------------------------------------------------------
+  DUNIYA - EK BADA ISLAND (8.6 km x 8.6 km), 18 ALAG CITY
+  Charo taraf samundar, beech me pahaad, nadiyan aur jheelein.
+  Bade map ko zoom out karo (8.6 km) to pura island paani me
+  tairta hua dikhega - koi seedha grid/graph nahi hai, sirf
+  ek asli island hai.
+----------------------------------------------------------
+  Har city apni jagah par hai (randomly bikhri hui), aur unke
+  beech lambi ghoomti sadkein hain. Har city ka apna style hai.
+  Aap apni GAADI ke bilkul paas paidal start hote ho -
+  F dabao aur gaadi me baith jao.
+
+   1  PEAK            - hari pahadi, summit tower (car se chadh sakte ho)
+   2  CLOCK TOWER     - 60m clock tower + purane ghar  <- START YAHIN
+   3  FACTORY         - factory sheds, chimney, silos, trucks
+   4  HANGAR          - hangar + plane + control tower
+   5  MILL            - sawmill, lakdi ke log, aari
+   6  SHIPYARD        - paani, jahaaz, gantry crane, containers
+   7  OBSERVATORY     - white dome + telescope
+   8  CAPE TOWN       - table mountain, lighthouse, colourful ghar
+   9  SENTOSA         - resort hotel, swimming pool, beach, palm
+  10  POCHINOK        - lakdi ke ghar, church (onion dome), kuan
+  11  MARS ELECTRIC   - cooling towers, bijli ke tower, laal zameen
+  12  RIM NAM VILLAGE - paani par stilt houses, naav, floating market
+  13  KATULISTIWA     - equator monument (globe), market, palm
+  14  BIMASAKTI STRIP - neon hotels, bade billboard, roshni wala arch
+  15  BULLSEYE        - shooting range, target, watch tower
+  16  GRAVEYARD       - chapel, kabrein, sookhe ped
+  17  PLANTATION      - kheton ki kataarein, plantation house, tractor
+  18  RIVERSIDE       - nadi, lakdi ka pul, riverside ghar, naav
+
+----------------------------------------------------------
+  GUNS - FREE FIRE JAISA (10 BANDOOK)
+----------------------------------------------------------
+  1 M500       pistol
+  2 UMP        SMG
+  3 MP40       SMG (sabse tez)
+  4 M1014      shotgun (ek baar me 10 goli)
+  5 AK47       rifle
+  6 M4A1       rifle
+  7 SCAR       rifle
+  8 M60        LMG (100 ki drum)
+  9 KAR98K     sniper (scope)
+  0 AWM        sniper (scope, sabse khatarnak)
+
+  LEFT CLICK   : GOLI CHALAO
+                 (daba ke rakho + mouse ghumao = DRAG FIRE,
+                  lagatar firing hoti rahegi)
+  RIGHT CLICK  : AIM / SCOPE
+                 (sniper me pura scope khulta hai - 16x zoom,
+                  gol kaala ghera + mil-dot crosshair)
+  1 ... 0      : bandook badlo (mouse wheel se bhi)
+  R            : RELOAD
+  G            : GLOO WALL lagaao
+  H            : GRENADE phenko
+  X            : punch (melee)
+
+  HEADSHOT : har bot ke sir par alag hitbox hai - sar me
+             lage to ek hi goli me bot gir jata hai. Screen
+             par "HEADSHOT!" likha aata hai + hit marker.
+
+  GLOO WALL KA RULE : ek waqt me sirf 3 deewar. Chauthi
+  lagate hi SABSE PEHLI wali gayab ho jati hai (bilkul
+  Free Fire jaisa). Neeche baayein 3 box me dikhta hai
+  kitni lagi hain.
+
+  Goliyan gloo wall se rukti hain, grenade ka blast 8.5
+  meter tak lagta hai, aur drum (barrel) me goli lagi to
+  blast ho jata hai.
+
+----------------------------------------------------------
+  GAADIYAN - 8 ALAG TYPES (sirf ek jaisi gaadi nahi)
+----------------------------------------------------------
+  Poore island par 166 gaadiyan khadi hain, aur ab wo 8 ALAG
+  TYPES ki hain - har type ka apna size, pahiye, aur apna
+  handling:
+
+   1) SEDAN   - aam gaadi (city ki sadkon par sabse zyada)
+   2) SPORTS  - neechi, chaudi, badi spoiler wali (sabse tez)
+   3) SUV     - unchi 4x4, roof rail
+   4) VAN     - lambi panel van, peeche do darwaze
+   5) PICKUP  - aage cab, peeche khula cargo bed
+   6) JEEP    - chhoti, roll cage, snorkel, peeche spare wheel
+   7) MONSTER TRUCK - 0.88 m ke bahut bade pahiye, uncha
+                 chassis, roll cage, do chrome exhaust stack
+   8) BIKE    - do pahiye, tank, fork, silencer - aur ek RIDER
+                 baitha hua (bike akeli nahi chalti dikhti)
+
+  - Kahan kaunsi milegi: city ki sadkon par sedan/van/bike,
+    khuli country road par pickup/SUV/jeep, aur 115 meter se
+    zyada unchi pahaadi road par JEEP aur kabhi MONSTER TRUCK.
+  - Har type ka top speed, acceleration, steering, grip aur
+    brake alag hai - monster truck bhaari aur slow, bike
+    halki aur tez, sports sabse tez.
+  - 10 rosh chamkile rang (laal, neela, peela, hara, safed,
+    orange, purple, cyan, pink) badalte rehte hain.
+
+  PAHIYE (TYRE) DETAIL:
+  - har tyre 16 tread blocks + sidewall + alloy rim + hub +
+    5 lug nuts se bana hai - paas jaake dekho to asli tyre
+    lagta hai, kaala gol tukda nahi
+  - chalte waqt tyre apni asli speed se ghoomta hai
+    (wheel ke radius ke hisaab se), aage ke pahiye mudte hain
+  - bike ka fork mudta hai aur bike curve me andar ki taraf
+    jhukti hai
+
+  ZAMEEN SOLID HAI - GAADI ZAMEEN ME NAHI GHUSTI:
+  - pahaad ka asli collider hai, aur gaadi ka floor angle
+    62 degree tak chalta hai (tez dhaal wali pahaadi road par
+    bhi gaadi sadak par hi rehti hai)
+  - har tick par gaadi ke neeche seedha ray jaata hai aur
+    island ke height se cross-check hota hai - agar body
+    kabhi zameen ke andar chali jaye to turant upar utha di
+    jaati hai (velocity bhi zero)
+  - body ke baad pahiye apni jagah par set hote hain:
+    naali/khadda ho to tyre andar nahi ghusta, pahaad par
+    tyre hawa me bhi nahi latakta (measure kiya: 5 mm se
+    zyada galti nahi)
+
+  Kisi bhi gaadi ke paas jao, F dabao -> aap us gaadi me
+  baith jaoge. Wapas F -> utar jao. Sab gaadiyan asli
+  physics wali hain, koi dummy nahi.
+
+----------------------------------------------------------
+  ZAMEEN AUR PAHAAD AB ZYADA DETAILED
+----------------------------------------------------------
+  - Zameen par ab ek sookshma daane (grain) wala texture hai
+    (procedural noise, triplanar - matlab pahaad par chipka
+    hua nahi lagta, har taraf natural lagta hai)
+  - Poore island par (city ke bahar) PED, BOULDER (bade
+    patthar) aur JHAADIYAN ug gayi hain: 48 meter ke tiles
+    me, aapke 180 meter ke andar hi bante hain, aur teen
+    MultiMesh me - matlab pura pahaad sirf 3 draw call
+  - Ye kabhi sadak par ya ghar ke andar nahi ugte, aur dhaal
+    par thoda zameen me dhase rehte hain taaki hawa me na
+    latkein
+  - Pahaad par snow line ~254 m, uske neeche chattanein,
+    scree, ghaas ki paryaten, nadi ke kinare keechad - sab
+    pehle se hai, ab uske upar ped-patthar bhi hai
+
+----------------------------------------------------------
+  NADIYAN, JHEELEIN, SAMUNDAR
+----------------------------------------------------------
+  Island par 9 nadiyan hain jo pahaadiyon se nikal ke
+  samundar ki taraf behti hain (apna paani le kar, ghat ke
+  saath). Kuch jagah jheelein bhi ban gayi hain. Paani ke
+  paas jaake dekho:
+   - nadi ka paani BEHTA hua dikhta hai (shader me do
+     chalte hue sine wave - rang gehre teal se halke
+     firozi tak badalta hai, dhoop me chamakta hai)
+   - kinare par geele keechad aur ret ke patte dikhte hain
+   - pahaadon par ab CRAG noise hai - tooti hui chattanein,
+     naali jaisi erosion lines, patthar ki parat (strata),
+     scree aur barf ki line (~254 m se upar barf, kinare
+     noise se toote hue, khadi chattan par barf nahi rukti)
+   - pahaadi ka peak 310 meter hai
+
+----------------------------------------------------------
+  SAB KUCH SOLID HAI
+----------------------------------------------------------
+  - Pahaad, zameen, har building ki deewar, ped ka tana,
+    patthar, bench, street light, khadi car, bus, drum,
+    bot - sab par asli collision hai.
+  - Pahaad ke andar nahi ghus sakte: upar chadhoge, andar
+    nahi. Agar kabhi niche chale jao to game aapko wapas
+    upar khada kar deta hai.
+  - HAR ghar ke andar ja sakte ho (pehle 3 me se 4 the,
+    ab 4 me se 4). Dukaan (commercial building) ka ground
+    floor bhi asli kamra hai - darwaza, frame, khidki,
+    awning, andar counter aur shelf.
+
+----------------------------------------------------------
+  MOBILE / PHONE CONTROLS (naya)
+----------------------------------------------------------
+Touch screen wale phone/tablet par apne aap on ho jate hain
+(desktop par chhup jate hain). F9 se on/off kar sakte ho.
+
+  * MOVE STICK (neeche baayen)  : jahan ungli rakho wahi stick
+      ban jata hai, aadha push = aadhi speed (analogue).
+  * FIRE (neeche daayen)        : dabao = goli, aur dabaye
+      hue UNGLI KO GHIISKO = aim ghumega (Free Fire jaisa
+      drag-fire). Ek hi ungli se fire + aim.
+  * SPRINT / JUMP / CROUCH / RELOAD / CAR (gadi me baithna).
+  * BAG (upar beech me)         : weapon wheel khulti hai.
+      Ek tap = wheel khuli, phir weapon par tap = haath me.
+      Bahar tap = band.
+  * CAM = camera badlo, MAP = bada map (ungli se chalao).
+  * Screen ke daayen hisse me kahin bhi drag = look/turn.
+
+GAADI ME: wahi stick ab throttle + steering hai (upar =
+speed, neeche = brake, baayen/daayen = steer) aur daayen
+cluster BOOST / BRAKE / EXIT ban jata hai.
+
+----------------------------------------------------------
+  GITHUB PAR DEPLOY KARNA (link se khelo)
+----------------------------------------------------------
+1) GitHub par naya repo banao (khali).
+2) Is folder me terminal kholein aur EK command chalao:
+     ./tools/deploy_github.sh https://github.com/<naam>/<repo>.git
+
+   (ya haath se:  git init -b main
+                  git add .
+                  git commit -m "Neon City Drive"
+                  git remote add origin https://github.com/<naam>/<repo>.git
+                  git push -u origin main )
+3) Repo me: Settings -> Pages -> Build and deployment ->
+   Source = "GitHub Actions" chunein.
+4) Actions tab me build chalega (~3 min). Ready hone par:
+     https://<naam>.github.io/<repo>/
+   Par phone ya laptop, kuch install kiye bina khel lo.
+
+Uska workflow file pehle se hai: .github/workflows/deploy.yml
+(Apne aap Godot 4.7.2 + export template download karta hai.)
+
+MAINE TEST KAR LIYA HAI: exported game ko asli Chromium browser
+me chala kar dekha - engine start, pura island ban, town render,
+0 error, click se mouse lock. Screenshot:
+screenshots/64_web_build_in_browser.png
+
+Git nahi chalana? To "neon-city-drive-web.zip" (ready build)
+ko https://app.netlify.com/drop par drag kar do - turant link
+mil jayega. (GitHub ke web upload me 38 MB ka index.wasm
+upload nahi hota, isliye GitHub ke liye Actions wala rasta
+hi hai.)
+
+Local test karna ho to:
+     ./tools/build_web.sh
+     python3 tools/serve_web.py
+   phir browser me  http://localhost:8000  (file:// se nahi
+   chalega, .wasm ke liye web server zaroori hai)
+
+----------------------------------------------------------
+  THIS UPDATE - ZAMEEN AUR PAHAADI ROAD (fix)
+----------------------------------------------------------
+* "Gaadi zameen ke andar chali jati hai" - asli wajah road
+  thi, car nahi. Pahaadi road 50 degree tak chadh rahi thi
+  aur pahaad road ke upar se ubak raha tha (har road ka
+  24% hissa pahaad ke andar tha, kabhi 20 meter tak).
+  Ab:
+  - road ka profile smooth hai aur dhalan 12% tak hi.
+  - road ke aas paas zameen kat-ti/bharti hai: tarmac ke
+    niche 30 cm jagah, aur 15 meter me pahaad wapas
+    normal. Ab ghaas road ke upar nahi nikalti aur road
+    ke niche chhupa pahaad gaadi ko nahi rokta.
+  - har road aur har shehar ke tarmac par asli collision
+    hai - jo aapko dikhta hai, wahi gaadi ka support hai.
+    Tyre theek tarmac par rehta hai (0.00 meter error).
+* Kerb / road ka kinara / shehar ke plate ka kinara 2-6 cm
+  uncha hota hai - ab gaadi us par chadh jati hai, rukti
+  nahi (34 cm tak step assist). Shehar me bahar se andar
+  full speed par ghus sakte ho.
+* GRAVITY ASLI HAI (9.81 m/s2) - car me bhi, paidal bhi.
+  20 meter ki unchai se gaadi 2.02 second me girti hai.
+* Paidal chalne ki speed bhi asli:
+     chalna 2.6 m/s, daudna 6.4 m/s (23 km/h).
+     jump 4.6 m/s -> 1.08 meter uncha, 0.94 second hawa me.
+  Pehle yeh sab 2-3 guna tez tha, isliye "floaty" lagta tha.
+
+----------------------------------------------------------
+  ZAROORI BAAT
+----------------------------------------------------------
+* Agar Godot kehta hai "project.godot not found" to aap galat
+  folder chun rahe hain - project.godot usi folder me hai jisme
+  scripts\ aur main.tscn hai.
+* Pehli baar khulte waqt 2-5 second world banne me lagenge
+  (sab kuch code se generate hota hai). Uske baad aap drive
+  kar sakte hain.
+* .godot folder aapke computer par khud ban jayega - usme kuch
+  nahi karna hai, usko delete/commit karne ki zarurat nahi.
+* Godot 4.3 ya usse naya version chahiye (test 4.7.2 par kiya gaya).
+
+Enjoy! Screenshots ke liye "screenshots" folder dekhein.

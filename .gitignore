@@ -1,0 +1,6 @@
+# Godot's cache / import data
+.godot/
+# local export output (the CI builds it again)
+build/
+# editor backups
+*.tmp

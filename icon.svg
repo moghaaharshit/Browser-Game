@@ -1,0 +1,41 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101a3a"/>
+      <stop offset="0.6" stop-color="#2a1d5e"/>
+      <stop offset="1" stop-color="#4a1b52"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2f36"/>
+      <stop offset="1" stop-color="#14161a"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="18" fill="url(#sky)"/>
+  <g fill="#0d1330">
+    <rect x="14" y="58" width="18" height="40"/>
+    <rect x="36" y="40" width="16" height="58"/>
+    <rect x="56" y="66" width="14" height="32"/>
+    <rect x="74" y="34" width="20" height="64"/>
+    <rect x="98" y="54" width="16" height="44"/>
+  </g>
+  <g fill="#2ff2ff" opacity="0.95">
+    <rect x="18" y="62" width="4" height="4"/><rect x="25" y="62" width="4" height="4"/>
+    <rect x="18" y="70" width="4" height="4"/><rect x="25" y="70" width="4" height="4"/>
+    <rect x="40" y="46" width="4" height="4"/><rect x="47" y="46" width="4" height="4"/>
+    <rect x="78" y="40" width="4" height="4"/><rect x="86" y="40" width="4" height="4"/>
+    <rect x="78" y="48" width="4" height="4"/><rect x="86" y="48" width="4" height="4"/>
+  </g>
+  <g fill="#ff3ba7">
+    <rect x="40" y="56" width="4" height="4"/><rect x="47" y="56" width="4" height="4"/>
+    <rect x="102" y="60" width="4" height="4"/><rect x="102" y="68" width="4" height="4"/>
+    <rect x="60" y="72" width="4" height="4"/>
+  </g>
+  <rect x="0" y="98" width="128" height="30" fill="url(#road)"/>
+  <g fill="#e8e6de">
+    <rect x="8" y="116" width="18" height="4"/>
+    <rect x="38" y="116" width="18" height="4"/>
+    <rect x="68" y="116" width="18" height="4"/>
+    <rect x="98" y="116" width="18" height="4"/>
+  </g>
+  <rect x="30" y="98" width="4" height="30" fill="#e8c33a" opacity="0.8"/>
+</svg>

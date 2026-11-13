@@ -1,0 +1,86 @@
+name: Build and deploy the game to GitHub Pages
+
+# Push to main (or press "Run workflow") and the game is built with Godot 4.7.2
+# and published at  https://<your-user>.github.io/<repo>/
+#
+# Nothing has to be installed on your machine: the runner downloads the engine
+# and the export templates itself.
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  GODOT_VERSION: "4.7.2"
+  EXPORT_NAME: "NeonCityDrive"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache Godot engine
+        id: cache-godot
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/godot-engine.zip
+            ~/.local/share/godot/export_templates
+          key: godot-${{ env.GODOT_VERSION }}-templates
+
+      - name: Download Godot ${{ env.GODOT_VERSION }}
+        if: steps.cache-godot.outputs.cache-hit != 'true'
+        run: |
+          set -e
+          wget -q "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip" -O ~/godot-engine.zip
+          wget -q "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_export_templates.tpz" -O ~/templates.tpz
+          mkdir -p ~/.local/share/godot/export_templates
+          unzip -q ~/templates.tpz -d ~/tpl
+          mv ~/tpl/templates ~/.local/share/godot/export_templates/${GODOT_VERSION}.stable
+
+      - name: Install the engine
+        run: |
+          set -e
+          unzip -q ~/godot-engine.zip -d ~/godot
+          sudo mv ~/godot/Godot_v${GODOT_VERSION}-stable_linux.x86_64 /usr/local/bin/godot
+          sudo chmod +x /usr/local/bin/godot
+          godot --version
+
+      - name: Import the project
+        run: godot --headless --path . --import || true
+
+      - name: Export to the web
+        run: |
+          set -e
+          mkdir -p build/web
+          godot --headless --path . --export-release "Web" build/web/index.html
+          touch build/web/.nojekyll
+          ls -lh build/web
+
+      - name: Upload the build
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
